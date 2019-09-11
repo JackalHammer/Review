@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Modak|Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    display: grid;
+    min-height: 100%;
+}
+
+body{
+    background-image: url(../img/dog.png)
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dog{
+    margin-top: 30px;
+    width: 50vw;
+    border-radius: 200px;
+    border-style: groove;
+    border-width: 30px;
+    border-color: black;
+    
+    
+    
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 20000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+h1{
+    background-color: white;
+    font-weight:100;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    
+    border-radius: 100px;
+    border-style: groove;
+    border-width: 20px;
+    border-color: black;
+   
+}
+
+.good{
+    font-size: 70pt;;
+    font-family: 'Modak', cursive;
+    -webkit-animation-name: rainbow;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    10% { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rainbow{
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: purple;}
+  100% {color: green;}
+}
